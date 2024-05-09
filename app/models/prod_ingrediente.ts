@@ -5,6 +5,12 @@ export default class ProdIngrediente extends BaseModel {
   @column({ isPrimary: true })
   declare id: number
 
+  @column()
+    declare produtos_id: number
+  
+  @column()
+    declare ingredientes_id: number
+
   @column.dateTime({ autoCreate: true })
   declare createdAt: DateTime
 

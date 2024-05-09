@@ -8,10 +8,10 @@ export default class Comanda extends BaseModel {
   @column()
   declare mesa: string
 
-  @column()
+  @column.dateTime({ autoCreate: true })
   declare data_pagamento: DateTime
 
-  @column()
+  @column.dateTime({ autoCreate: true })
   declare data: DateTime
 
   @column()

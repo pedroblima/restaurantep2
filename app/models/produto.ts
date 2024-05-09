@@ -14,6 +14,9 @@ export default class Produto extends BaseModel {
   @column()
   declare tamanho: string
 
+  @column()
+  declare tipos_id: number
+
   @column.dateTime({ autoCreate: true })
   declare createdAt: DateTime
 
